@@ -18,6 +18,9 @@ const snake = [
     Pair(10)(7),
     Pair(10)(8),
 ];
+
+
+
 let food    = Pair(15)(15);
 
 // function snakeEquals(a, b) { return a.x === b.x && a.y === b.y }
@@ -27,7 +30,7 @@ const pairEq = a => b =>  a.x === b.x && a.y === b.y; // todo: your code here
 const pairPlus = a => b => a + b // todo: your code here
 
 // Function and Pair = Pair  // Functor
-const pairMap = f => p =>  f(p) // todo: your code here
+const pairMap = f => p => q => f(p)(q) // todo: your code here
 
 
 function changeDirection(orientation) {
