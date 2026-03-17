@@ -16,15 +16,22 @@ function start() {
 
 function nextBoard() {
     // keep old ball values for the sake of efficient clearing of the old display
-
-
+    old.x = ball.x;
+    old.y = ball.y;
 
     // handle ball is hitting the bounds
+    //if (ball.x > 390) {change}
+
     //   reverse direction
+
+
     //   lose some energy relative to the current inertia (only velocity varies)
+
 
     // calculate new position
     // calculate any changes in velocity due to gravitational pull or medium resistance
+
+
 
 
 }
