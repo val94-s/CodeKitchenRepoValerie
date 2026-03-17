@@ -21,13 +21,13 @@ const snake = [
 let food    = Pair(15)(15);
 
 // function snakeEquals(a, b) { return a.x === b.x && a.y === b.y }
-const pairEq = a => b =>  undefined; // todo: your code here
+const pairEq = a => b =>  a.x === b.x && a.y === b.y; // todo: your code here
 
 // Pair + Pair = Pair        // Monoid
-const pairPlus = a => b =>  undefined; // todo: your code here
+const pairPlus = a => b => a + b // todo: your code here
 
 // Function and Pair = Pair  // Functor
-const pairMap = f => p =>  undefined; // todo: your code here
+const pairMap = f => p =>  f(p) // todo: your code here
 
 
 function changeDirection(orientation) {
