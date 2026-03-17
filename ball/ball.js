@@ -17,6 +17,8 @@ function start() {
 function nextBoard() {
     // keep old ball values for the sake of efficient clearing of the old display
 
+
+
     // handle ball is hitting the bounds
     //   reverse direction
     //   lose some energy relative to the current inertia (only velocity varies)
