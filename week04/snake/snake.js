@@ -1,5 +1,5 @@
 // requires ../lambda/lambda.js
-
+const Pair = x => y => f => f(x)(y);
 const MAX = 20;
 
 const north = Pair( 0)(-1);
