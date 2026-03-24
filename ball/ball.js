@@ -19,8 +19,18 @@ function nextBoard() {
     old.x = ball.x;
     old.y = ball.y;
 
+
+
     // handle ball is hitting the bounds
+
+
+    if(ball.x >= 390 && ball.x < 0){
+        ball.dx -= 2;
+        ball.dy *= 2;
+    }
     //if (ball.x > 390) {change}
+
+
 
     //   reverse direction
 
