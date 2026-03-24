@@ -1,6 +1,4 @@
 
-
-
 // SVG Size
 var width = 700,
 		height = 500;
@@ -26,11 +24,30 @@ d3.csv(data).then(
 		});
 		console.log(mapped_data);
 
+		const incomeScale = d3.scaleLinear()
+			.domain([0, d3.max(mapped_data, d => d.income[0])])
+			.range([0, width]);
+
+		const lifeExcpectancyScale = d3.scaleLinear()
+			.domain([0, d3.max(mapped_data, d => d.lifeExpectancy[1])])
+			.range([0, height]);
+
 
 		const svg_countries = d3.select("chart-area").append("svg")
 			.attr("width", width)
 			.attr("height", height);
 
+
+		svg_countries.selectAll("circle")
+			.data(mapped_data)
+			.enter()
+			.append("circle")
+			.attr("cx", d => incomeScale(d[0]))
+			.attr("cy", d => lifeExcpectancyScale(d[1]))
+			.attr("r", d => d.population <= 10000 ? 4 : 8)
+			.attr("fill", d => d.population <= 10000 ? "#d88e04" : "#0000ff")
+			.attr("stroke", "black")
+			.attr("stroke-width" , 1);
 
 
 
