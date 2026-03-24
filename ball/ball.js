@@ -24,10 +24,7 @@ function nextBoard() {
     // handle ball is hitting the bounds
 
 
-    if(ball.x >= 390 && ball.x < 0){
-        ball.dx -= 2;
-        ball.dy *= 2;
-    }
+
     //if (ball.x > 390) {change}
 
 
@@ -39,6 +36,10 @@ function nextBoard() {
 
 
     // calculate new position
+
+    ball.y += ball.dy;
+    ball.x += ball.dx;
+
     // calculate any changes in velocity due to gravitational pull or medium resistance
 
 
