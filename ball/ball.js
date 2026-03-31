@@ -30,7 +30,7 @@ function nextBoard() {
         ball.dy *= -2;
     }
 
-    const leftSide = ball.x <= 10 && ball.x < 0;
+    const leftSide = ball.x <= 10;
     const rightSide = ball.x >= 390 && ball.x > 0;
 
     if(leftSide|| rightSide){
@@ -40,12 +40,6 @@ function nextBoard() {
 
     ball.y += ball.dy;
     ball.x += ball.dx;
-
-
-
-
-    //   reverse direction
-
 
     //   lose some energy relative to the current inertia (only velocity varies)
 
