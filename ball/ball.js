@@ -19,20 +19,27 @@ function nextBoard() {
     old.x = ball.x;
     old.y = ball.y;
 
-
-
     // handle ball is hitting the bounds
     //if ball at
-
-
-
     //if (ball.x > 390) {change}
-    if (ball.x >= 390){
-        ball.dx -= 4;
-        ball.dx *= 2;
+
+    const floor = ball.y >= 390 && ball.dy > 0;
+
+    if (floor){
+        ball.dy -= 4;
+        ball.dy *= -2;
     }
 
+    const leftSide = ball.x <= 10 && ball.x < 0;
+    const rightSide = ball.x >= 390 && ball.x > 0;
 
+    if(leftSide|| rightSide){
+        ball.dx *= -2;
+        ball.dx *= 0.8;
+    }
+
+    ball.y += ball.dy;
+    ball.x += ball.dx;
 
 
 
@@ -45,8 +52,6 @@ function nextBoard() {
 
     // calculate new position
 
-    ball.y += ball.dy;
-    ball.x += ball.dx;
 
 
     // calculate any changes in velocity due to gravitational pull or medium resistance
