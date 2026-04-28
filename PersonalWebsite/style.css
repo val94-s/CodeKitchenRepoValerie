@@ -70,6 +70,8 @@ body {
 .sidebar {
     width: 200px;
     float: left;
+    /*margin bottom makes sure the sidebar does not overlap with the
+    footer*/
     margin-bottom: 25px;
 }
 
@@ -105,7 +107,10 @@ body {
 
 .footer {
     margin-bottom: 25px;
+    /*this makes sure the sidebar does not overlap with the footer
+    in browser view*/
     clear: both;
+
 }
 
 @media(max-width:915px) {
