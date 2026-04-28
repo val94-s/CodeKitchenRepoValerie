@@ -70,6 +70,7 @@ body {
 .sidebar {
     width: 200px;
     float: left;
+    margin-bottom: 25px;
 }
 
 /*Container for the sidebar image.*/
@@ -104,6 +105,7 @@ body {
 
 .footer {
     margin-bottom: 25px;
+    clear: both;
 }
 
 @media(max-width:915px) {
