@@ -30,7 +30,7 @@ function nextBoard() {
         ball.dy *= -2;
     }
 
-    const leftSide = ball.x <= 10;
+    const leftSide = ball.x <= 10 && ball.x < 0 ;
     const rightSide = ball.x >= 390 && ball.x > 0;
 
     if(leftSide|| rightSide){
