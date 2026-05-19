@@ -27,7 +27,7 @@ let food    = Pair(15)(15);
 const pairEq = a => b =>  a.x === b.x && a.y === b.y; // todo: your code here
 
 // Pair + Pair = Pair        // Monoid
-const pairPlus = a => b => Pair(a)(b) + Pair(a)(b);// todo: your code here
+const pairPlus = a => b => Pair(a)(b)(x => y => x + y);// todo: your code here
 
 // Function and Pair = Pair  // Functor
 const pairMap = f => p => q => undefined;// todo: your code here

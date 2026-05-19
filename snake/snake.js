@@ -15,7 +15,7 @@ const snake = [
     {x: 10, y: 7},
     {x: 10, y: 8},
 ];
-let food = {x: 15, y: 15};
+const food = {x: 15, y: 15};
 
 function snakeEquals(a, b) {
     return a.x === b.x && a.y === b.y;
