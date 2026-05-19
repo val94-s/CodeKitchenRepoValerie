@@ -27,10 +27,10 @@ let food    = Pair(15)(15);
 const pairEq = a => b =>  a.x === b.x && a.y === b.y; // todo: your code here
 
 // Pair + Pair = Pair        // Monoid
-const pairPlus = a => b => a + b // todo: your code here
+const pairPlus = a => b => Pair(a)(b) + Pair(a)(b);// todo: your code here
 
 // Function and Pair = Pair  // Functor
-const pairMap = f => p => q => f(p)(q) // todo: your code here
+const pairMap = f => p => q => undefined;// todo: your code here
 
 
 function changeDirection(orientation) {
@@ -51,6 +51,8 @@ function safeGetElementById(id) {
 const log = s => console.log(s);
 
 function start() {
+
+
 
     // todo: if safeGetElementById("canvas") yields an error message, log it. Otherwise startWithCanvas
 

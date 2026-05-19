@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.insertAdjacentHTML("beforeend", footerEl);
 
         // Inserting sidebars:
-        const wrapperElement = document.querySelector("main"); // you might have to change this selector to something like .my-wrapper
+        const wrapperElement = document.querySelector(".wrapper"); // you might have to change this selector to something like .my-wrapper
         if (wrapperElement) {
             wrapperElement.insertAdjacentHTML("afterbegin", sidebarEl1);
             wrapperElement.insertAdjacentHTML("beforeend", sidebarEl2);
@@ -80,32 +80,57 @@ const nesting = getNestingString();
 
 // Insert your header HTML inside these ``. You can use HTML as usual.
 const headerEl = `
-	<header>
-		Header. Example of how to use the 'active' class to style active links (here: bold):
-		<nav>
-			<a href="/coding/layout-base-code">homepage</a>
-			<a href="/coding/base-code-example/">this page</a>
-			<a href="/coding/layout-base-code">other page</a>
-			<a href="/coding/layout-base-code">other page</a>
-		</nav>
-	</header>
+    <div class="main-wrapper">
+        <div class="title">
+            <div class="box">
+                <div class="inner">
+                    <h2>Magnifigal/Bone</h2>
+                </div>
+            </div>
+
+        </div>
+
+	<div class="links">
+            <div class="box">
+                <div class="inner">
+                    <ul>
+                        <li><a></a></li>
+                        <li><a href="https://linktr.ee/bonespookmagni">Social Media Links</a></li>
+                        <li>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                        </li>
+                        <li class="last"><a href="https://bonespookmagni.itch.io/">Shop & Downloads</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 `;
 
 // Insert your footer HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a footer.
 const footerEl = `
-	<footer>
-		Footer. Example of how to add an image: 
-		<img src="${nesting}/assets/img/layout/divider1.gif" alt="" aria-hidden="true"/>
-	</footer>
+	<div class="footer">
+        <div class="box">
+            <div class="inner">
+                <p>Stylesheet by EGGRAMEN, 2021</p>
+            </div>
+        </div>
+    </div>
 `;
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl1 = `
-	<aside>
-		Sidebar1
-	</aside>
+<div class ="sidebar">
+    <aside>
+    Sidebar 1
+    </aside>
+</div>
 `;
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
