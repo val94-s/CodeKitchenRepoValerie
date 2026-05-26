@@ -36,9 +36,9 @@ function initActiveLinks() {
             .replace(".html", "")
             .replace("/public", "");
 
-        if (pathname == "/") {
+        if (pathname === "/") {
             // homepage
-            if (elHref == "/" || elHref == "/index.html") el.classList.add("active");
+            if (elHref === "/" || elHref === "/index.html") el.classList.add("active");
         } else {
             // other pages
             if (window.location.href.includes(elHref)) el.classList.add("active");
@@ -54,8 +54,8 @@ function getNestingString() {
         .replace("https://", "")
         .replace("/public/", "/");
     const numberOfSlahes = currentUrl.split("/").length - 1;
-    if (numberOfSlahes == 1) return ".";
-    if (numberOfSlahes == 2) return "..";
+    if (numberOfSlahes === 1) return ".";
+    if (numberOfSlahes === 2) return "..";
     return ".." + "/..".repeat(numberOfSlahes - 2);
 }
 
