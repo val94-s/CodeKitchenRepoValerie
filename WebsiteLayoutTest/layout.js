@@ -83,9 +83,10 @@ const headerEl = `
 	<header>
 		Header. Example of how to use the 'active' class to style active links (here: bold):
 		<nav>
-			<a href="/coding/layout-base-code">homepage</a>
-			<a href="/coding/base-code-example/">this page</a>
-			<a href="/coding/layout-base-code">other page</a>
+			<a href="index.html">homepage</a>
+			<a href="About.html">this page</a>
+			<a href="Gallery.html">other page</a>
+			<a href="index.html">other page 2</a>
 			<a class ="last" href="/coding/layout-base-code">other page</a>
 		</nav>
 	</header>
