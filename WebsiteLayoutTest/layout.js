@@ -105,7 +105,19 @@ const footerEl = `
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl1 = `
 	<aside>
-		Sidebar1
+		<img src="https://raining-starss.neocities.org/gittyimages%20(1).gif" alt="could not load">
+        <img src="https://pixelsafari.neocities.org/stamps/ilovestamps.gif"  alt="could not load">
+        <img src="https://pixelsafari.neocities.org/stamps/more/sweets.gif"  alt="could not load">
+        <img src="https://pixelsafari.neocities.org/stamps/more/candycorn.png"  alt="could not load">
+        <img src="https://y2k.neocities.org/stamps/made_in_the___90s_by_mr_stamp.gif"  alt="could not load">
+        <img src="https://y2k.neocities.org/stamps2/_stamp__alfred__hunter_of_vilebloods_by_cute_quts-da7znz9.png" alt ="could not load">
+        <img src="https://y2k.neocities.org/stamps/tumblr_pbyzqd09lD1xzybrpo5_250.gif" alt = "could not load">
+        <img src="https://raining-starss.neocities.org/garfpenis%20(8).gif"  alt="could not load">
+        <img src="https://raining-starss.neocities.org/twiddle%20(4).gif"  alt="could not load">
+        <img src="https://raining-starss.neocities.org/blinkiefyle%20(14).gif"  alt="could not load">
+        <a target="_blank" href="https://amherrington.nfshost.com/">
+            <img src="https://images.squidge.org/images/2025/02/17/herrington_banner.jpeg"  alt="could not load">
+        </a>
 	</aside>
 `;
 
