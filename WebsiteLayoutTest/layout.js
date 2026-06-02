@@ -105,11 +105,6 @@ const footerEl = `
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl1 = `
 	<aside>
-	    <div class="sidebar-image">
-            <div class="inner">
-                <img src="https://pbs.twimg.com/profile_images/1574807955526008832/HtmVv8eH_400x400.jpg" alt="could not load">
-            </div>
-        </div>
 		<img src="https://raining-starss.neocities.org/gittyimages%20(1).gif" alt="could not load">
         <img src="https://pixelsafari.neocities.org/stamps/ilovestamps.gif"  alt="could not load">
         <img src="https://pixelsafari.neocities.org/stamps/more/sweets.gif"  alt="could not load">
